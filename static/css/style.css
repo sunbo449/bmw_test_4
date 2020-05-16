@@ -1,0 +1,225 @@
+
+/*模板样式区域*/
+
+/* 导航栏logo */
+.navbar-header>a{
+    font-size: 20px;
+}
+
+.navbar-header-logo{
+    width: 50px;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.navbar-nav{
+    margin-left: 30px;
+}
+
+
+.table-hover{
+    text-align: center;
+}
+
+.table-td{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*登录标签样式设置*/
+.nav-login{
+    position: absolute;
+    right: 120px;
+    top: 15px;
+}
+
+.nav-login>span, a{
+    font-size: 14px;
+    color: snow;
+}
+
+.dropdown-menu{
+    border-radius: 10px;
+}
+
+.panel-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.panel-footer>span{
+    margin: 0 5px;
+}
+
+.panel-footer>a{
+    color: #1b6d85;
+}
+
+
+/*首页*/
+
+.index_car_id{
+    color: #1b6d85;
+}
+
+.index_car_id:hover{
+    color: red;
+}
+
+
+
+/*钣金工序产能样式区*/
+
+.bj_capacity{
+    padding: 10px 10px;
+}
+
+.label-info{
+    margin-top: 10px;
+    /*font-size: 16px;*/
+}
+
+
+.bj_one{
+    margin-bottom: 10px;
+    padding: 1px 10px;
+}
+
+.bj_logo{
+    width: 40px;
+    margin-right: 20px;
+}
+
+
+.pt_capacity{
+    margin-bottom: 10px;
+    padding: 20px 10px 10px;
+}
+
+.btn-primary{
+    margin-left: 20px;
+}
+
+
+
+/*数据录入页面样式区域*/
+
+
+.form-inline{
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.form-group{
+    margin: 0 15px;
+}
+
+.form-control{
+    margin: 0 10px;
+}
+
+.from-time{
+    margin: 30px 15px;
+}
+
+.checkbox{
+    margin: 15px;
+    padding: 10px 20px 20px 0;
+    border: 1px solid silver;
+}
+
+.checkbox-label{
+    margin: 0 20px;
+}
+
+.checkbox-label:hover{
+    color: red;
+}
+
+.data-input-button{
+    margin:  30px 30px;
+}
+
+.btn-default{
+    /*margin-top: 20px;*/
+    margin-left: 20px;
+}
+
+.checkbox-title{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/*车辆信息详情页面*/
+
+.car-message-title{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.car-message-main{
+    margin-top: 20px;
+}
+
+.btn-group-justified{
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+/*钣金技师打卡*/
+
+.modal-content{
+    display: inline-flex;
+}
+
+
+.bj_daka{
+    margin: 15px;
+}
+
+.qcl-form{
+    display: inline-flex;
+}
+
+/*前处理打卡*/
+
+.qcl-daka, .qcl-daka-over{
+    width: 280px;
+    margin-left: 70px;
+}
+
+.qcl-daka-over{
+    margin-left: 55px;
+}
+
+
+/*喷涂打卡*/
+
+.pt-daka{
+    text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

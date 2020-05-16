@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block nav_home_active %}active{% endblock %}
+
+{% block main %}
+    <!-- 首页内容显示区域开始 -->
+    <table class="table table-hover">
+        <tr class="info table-td">   
+            <td>序号.<small>ID</small></td>
+            <td class="hidden-xs">登记时间.<small>TIME</small></td>
+            <td>车牌号码.<small>CAR_NUM</small></td>
+            <td>工单号码.<small>WIP</small></td>
+            <td>服务顾问.<small>SA</small></td>
+            <td>钣金技师.<small>MT</small></td>
+            <td class="hidden-xs">维修项目.<small>ITEM</small></td>
+            <td>维修状态.<small>CON</small></td>
+            <td class="hidden-xs">交付时间.<small>TIME</small></td>
+        </tr>
+        <tr>
+            <td><a  class="index_car_id" href="{% url 'mycar:car_message' %}">1</a></td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+            <td>鲁A18650</td>
+            <td>69885</td>
+            <td>张海龙</td>
+            <td>张敬旭</td>
+            <td class="hidden-xs">前杠、机盖、侧围、大灯、车顶、后杠、左前车门、右前车门</td>
+            <td>前处理</td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+            <td>鲁A18650</td>
+            <td>69885</td>
+            <td>张海龙</td>
+            <td>张敬旭</td>
+            <td class="hidden-xs">前杠、机盖、侧围、大灯、车顶、后杠、左前车门、右前车门</td>
+            <td>前处理</td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+            <td>鲁A18650</td>
+            <td>69885</td>
+            <td>张海龙</td>
+            <td>张敬旭</td>
+            <td class="hidden-xs">前杠、机盖、侧围、大灯、车顶、后杠、左前车门、右前车门</td>
+            <td>前处理</td>
+            <td class="hidden-xs">2020年12月31日 18：30</td>
+        </tr>
+    </table>
+    <!-- 首页内容显示区域结束 -->
+{% endblock %}

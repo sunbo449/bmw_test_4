@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block nav_data_input_active %}active{% endblock %}
+
+
+{% block main %}
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">车牌号码 .NUM</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="CAR_NUM">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">工单号.WIP</label>
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="WIP">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">车型.MODEL</label>
+            <select class="form-control" id="exampleInputEmail2">
+                <option></option>
+                <option>1系</option>
+                <option>2系</option>
+                <option>3系</option>
+                <option>4系</option>
+                <option>5系</option>
+                <option>6系</option>
+                <option>7系</option>
+                <option>8系</option>
+                <option>X1</option>
+                <option>X2</option>
+                <option>X3</option>
+                <option>X4</option>
+                <option>X5</option>
+                <option>X6</option>
+                <option>X7</option>
+                <option>Z4</option>
+                <option>MINI</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">服务顾问.SA</label>
+            <select class="form-control" id="exampleInputEmail2">
+                <option></option>
+                <option>张海龙</option>
+                <option>孙永超</option>
+                <option>徐淑员</option>
+                <option>王加奎</option>
+                <option>卢  杨</option>
+                <option>继来光</option>
+                <option>其他SA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">钣金技师.MT</label>
+            <select class="form-control" id="exampleInputEmail2">
+                <option></option>
+                <option>张敬旭</option>
+                <option>刘进秋</option>
+                <option>吴庆宽</option>
+                <option>姬传涛</option>
+                <option>李 帅</option>
+                <option>张万坤</option>
+            </select>
+        </div><br>
+
+        <div class="form-group from-time">
+            <label for="exampleInputEmail2">预约进厂时间.TIME</label>
+            <input type="datetime-local" class="form-control" id="exampleInputEmail2">
+        </div>
+
+         <div class="form-group from-time">
+            <label for="exampleInputEmail2">预约出厂时间.TIME</label>
+            <input type="datetime-local" class="form-control" id="exampleInputEmail2">
+         </div>
+
+        <div class="form-group from-time">
+            <label for="exampleInputEmail2">预估出厂时间.TIME</label>
+            <input type="datetime-local" class="form-control" id="exampleInputEmail2">
+        </div><br><br>
+
+        <div class="checkbox-title">
+            <label for="exampleInputEmail2">维修项目.ITEM:</label><br><br>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">前保险杠
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">前机盖
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左前侧围
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左前门
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左后门
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左后侧围
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左侧门槛
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左侧A柱
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左侧B柱
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">左侧上边梁
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">大灯
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">前风挡
+            </label>
+
+            <br><br>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">后保险杠
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">后机盖
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右前侧围
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右前门
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右后门
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右后侧围
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右侧门槛
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右侧A柱
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右侧B柱
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">右侧上边梁
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">尾灯
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">后风挡
+            </label>
+
+            <br><br>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">车顶维修
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">更换后侧围
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">更换后围板
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">更换前/后纵梁
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">更换左/右后视镜
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" value="" name="">全车喷漆
+            </label>
+        </div><br>
+        <div class="data-input-button">
+            <button type="reset" class="btn btn-default">重新录入</button>
+            <button type="submit" class="btn btn-default">录入完成</button>
+        </div>
+
+
+
+    </form>
+{% endblock %}
+

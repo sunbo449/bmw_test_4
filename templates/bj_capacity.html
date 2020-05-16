@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block main %}
+     <button class="btn btn-primary" type="button">
+          {% block capacity_title %}钣金工序{% endblock %} <span class="badge">35</span>
+     </button>
+    <div class="bj_capacity">
+        <div class="bj_one">
+            {% block photo1 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+
+            {% block daka %}
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
+                鲁A18990
+            </button>
+
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <form class="bj_daka">
+                        <label><input type="submit" value="开始维修"></label>
+                        </form>
+
+                        <form class="bj_daka">
+                            <label><input type="submit" value="结束维修"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endblock %}
+            <br><br>
+
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 40em;">
+                40%
+              </div>
+            </div>
+        </div>
+
+        <div class="bj_one">
+            {% block photo2 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+            <span class="label label-warning">
+                <a href="#">鲁A19555</a>
+            </span>
+            <br><br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 70em;">
+                70%
+              </div>
+            </div>
+        </div>
+
+        <div class="bj_one">
+            {% block photo3 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+            <span class="label label-warning">
+                <a href="#">鲁A19555</a>
+            </span><br><br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 88em;">
+                88%
+              </div>
+            </div>
+        </div>
+
+        <div class="bj_one">
+            {% block photo4 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+            <span class="label label-warning">
+                <a href="#">鲁A19555</a>
+            </span><br><br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 75em;">
+                75%
+              </div>
+            </div>
+        </div>
+
+
+        <div class="bj_one">
+            {% block photo5 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+            <span class="label label-warning">
+                <a href="#">鲁A19555</a>
+            </span><br><br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 30em;">
+                30%
+              </div>
+            </div>
+        </div>
+
+        <div class="bj_one">
+            {% block photo6 %}<img class="bj_logo" src="../static/images/001.jpg">{% endblock %}
+            <span class="label label-warning">
+                <a href="#">鲁A19555</a>
+            </span><br><br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 50em;">
+                50%
+              </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

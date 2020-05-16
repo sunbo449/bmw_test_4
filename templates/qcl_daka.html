@@ -1,0 +1,61 @@
+{% extends "base.html"%}
+
+{% block main %}
+    <div class="form-inline car-message-main">
+        <div class="form-group">
+            <label for="exampleInputName2">车牌号.CAR_NUM</label>
+            <label class="form-control" id="exampleInputName2">鲁A18999</label>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputName2">工单号.WIP</label>
+            <label class="form-control" id="exampleInputName2">68999</label>
+        </div>
+    </div>
+
+        <form class="form-inline form-daka ">
+            <div class="form-group">
+                <label for="exampleInputEmail2">维修技师.NAME</label>
+                <select class="form-control" id="exampleInputEmail2">
+                    <option></option>
+                    <option>张 新</option>
+                    <option>赵 凯</option>
+                    <option>孙克安</option>
+                    <option>章 亮</option>
+                    <option>孙建新</option>
+                    <option></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail2">维修件数.NUM</label>
+                <select class="form-control" id="exampleInputEmail2">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </select>
+            </div><br><br><br>
+            <label><input class="btn btn-primary btn-lg qcl-daka" type="submit" value="维修开始"></label>
+        </form>
+
+        <form class="form-inline">
+            <div class="form-group">
+               <label><input class="btn btn-primary btn-lg qcl-daka-over" type="submit" value="维修完成"></label>
+            </div>
+        </form>
+
+
+{% endblock %}

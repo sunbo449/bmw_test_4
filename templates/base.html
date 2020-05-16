@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>济南宝悦行汽车销售服务有限公司</title>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{#    <script src="{% static 'js/bootstrap.js' %}"></script>#}
+    <link rel="icon" type="text/css" href="{% static 'images/logo.ico' %}">
+</head>
+<body>
+    <!-- 导航区域开始 -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <!--导航头部标题-->
+            <div class="navbar-header">
+				<a class="navbar-brand">钣喷车间管理系统</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                <!-- 导航栏登陆信息区域 -->
+                <div class="nav-login">
+                    <span class="label label-info">欢迎：<a href="#">孙博</a></span>
+                    <span class="label label-info"><a href="{% url 'mycar:login' %}">退出</a></span>
+                </div>
+            </div>
+
+            <!-- 导航栏内容区域 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="{% block nav_home_active %}{% endblock %}">
+                        <a href="/">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+					<li class="{% block nav_data_input_active %}{% endblock %}">
+                        <a href="{% url 'mycar:date_input' %}">登记入场</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+						   role="button" aria-haspopup="true" aria-expanded="false">
+							产能状态
+							<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="{% url 'mycar:capacity' %}">车间总产能</a></li>
+								<li role="separator" class="divider"></li>
+                                <li><a href="{% url 'mycar:bj_capacity' %}">钣金工序产能</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="{% url 'mycar:qcl_capacity' %}">前处理工序产能</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="{% url 'mycar:pt_pg_capacity' %}">喷涂/抛光工序产能</a></li>
+							</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+						   role="button" aria-haspopup="true" aria-expanded="false">
+							数据报表
+							<span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">钣金工序数据统计报表</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">前处理工序数据统计报表</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">喷涂工序数据统计报表</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">钣喷车间数据报表</a></li>
+							</ul>
+					</li>
+				</ul>
+
+                <!-- 导航栏搜索栏 -->
+                <form class="navbar-form navbar-left hidden-xs">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="WIP/车牌号码">
+                    </div>
+                    <button type="submit" class="btn btn-default">查询</button>
+                </form>
+
+                <!-- 导航栏logo -->
+                 <img class="navbar-header-logo hidden-xs" alt="Brand" src="{% static 'images/logo.ico' %}">
+			</div>
+        </div>
+    </nav>
+    <!-- 导航内容区域结束 -->
+
+{#主题内容区域#}
+{% block main %}{% endblock %}
+
+{#网页底部内容区域#}
+
+    <div class="panel-footer hidden-xs">
+        <span>Copyright © 2020 SunBo. All rights reserved.</span>
+        <span>|</span>
+        <a href="mailto: 309593135@qq.com">E-mail: 309593135@qq.com</a>
+        <span>|</span>
+        <span>Add： 13966 Century Avenue, Lixia District, Jinan City, Shandong Province</span>
+    </div>
+</body>
+</html>
+
+
